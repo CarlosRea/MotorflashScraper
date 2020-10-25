@@ -12,6 +12,7 @@ BOT_NAME = 'motorflash'
 SPIDER_MODULES = ['motorflash.spiders']
 NEWSPIDER_MODULE = 'motorflash.spiders'
 
+# CLOSESPIDER_PAGECOUNT = 1000
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'motorflash (+http://www.yourdomain.com)'
@@ -20,7 +21,7 @@ NEWSPIDER_MODULE = 'motorflash.spiders'
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
