@@ -15,10 +15,11 @@ class MotorflashItem(scrapy.Item):
     anunciante = scrapy.Field()
     precio_oferta = scrapy.Field()
     precio_nuevo  = scrapy.Field()
+    imagen = scrapy.Field()
 
     combustible = scrapy.Field()
     kilometros = scrapy.Field()
-    potencia = scrapy.Field()
+    #potencia = scrapy.Field()
     color = scrapy.Field()
     matriculacion = scrapy.Field()
     color_tap = scrapy.Field()
@@ -26,7 +27,7 @@ class MotorflashItem(scrapy.Item):
     ubicacion = scrapy.Field()
     cambio = scrapy.Field()
     garantia = scrapy.Field()
-    puertas = scrapy.Field()
+    #puertas = scrapy.Field()
     consumo = scrapy.Field()
 
     altura = scrapy.Field()
@@ -44,5 +45,14 @@ class MotorflashItem(scrapy.Item):
     consum_carretera = scrapy.Field()
     consum_urbano = scrapy.Field()
     consum_comb_mix = scrapy.Field()
+
+    num_cilindros = scrapy.Field()
+    cilindrada = scrapy.Field()
+    potencia = scrapy.Field()
+    par_motor = scrapy.Field()
+    est_emisiones = scrapy.Field()
+    traccion = scrapy.Field()
+    neumaticos_del= scrapy.Field()
+    neumaticos_tra = scrapy.Field()
 
     pass
