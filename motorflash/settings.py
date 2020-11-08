@@ -12,7 +12,7 @@ BOT_NAME = 'motorflash'
 SPIDER_MODULES = ['motorflash.spiders']
 NEWSPIDER_MODULE = 'motorflash.spiders'
 
-# CLOSESPIDER_PAGECOUNT = 1000
+#CLOSESPIDER_PAGECOUNT = 20
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'motorflash (+http://www.yourdomain.com)'

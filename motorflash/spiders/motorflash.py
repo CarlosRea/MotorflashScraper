@@ -40,6 +40,7 @@ class MotorflashSpider(CrawlSpider):
         items["descripcion"] = response.xpath('//*[@id="content"]/section/div/div[2]/h1/span[1]/text()').extract_first()
         items["precio_oferta"] = response.xpath('//*[@id="content"]/section/div/div[2]/div[4]/div/div[2]/div[1]/div/h3/span/text()').extract_first()
         items["precio_nuevo"] = response.xpath('//*[@id="content"]/section/div/div[2]/div[4]/div/div[2]/div[2]/div/dl/dd[1]/strong/text()').extract_first()
+        items["imagen"] = response.xpath('//*[@id="gallery"]/div[6]/div/picture/source/source/@data-srcset').extract()
 
         anunciante = response.xpath('//*[@id="ancla-galeria"]/div[3]/div[1]/div/p/a/text()').extract_first()
         if len(anunciante) == 0:
@@ -59,8 +60,8 @@ class MotorflashSpider(CrawlSpider):
                 items["combustible"] = valor
             elif nombre == "Kilómetros":
                 items["kilometros"] = valor
-            elif nombre == "Potencia":
-                items["potencia"] = valor
+            # elif nombre == "Potencia":
+            #     items["potencia"] = valor
             elif nombre == "Color":
                 items["color"] = valor
             elif nombre == "Matriculación":
@@ -71,12 +72,12 @@ class MotorflashSpider(CrawlSpider):
                 items["plazas"] = valor
             elif nombre == "Ubicación":
                 items["ubicacion"] = valor
-            elif nombre == "Cambio":
-                items["cambio"] = valor
+            # elif nombre == "Cambio":
+            #     items["cambio"] = valor
             elif nombre == "Garantía":
                 items["garantia"] = valor
-            elif nombre == "Puertas":
-                items["puertas"] = valor
+            # elif nombre == "Puertas":
+            #     items["puertas"] = valor
             elif nombre == "Consumo":
                 items["consumo"] = valor
 
@@ -115,5 +116,24 @@ class MotorflashSpider(CrawlSpider):
                 items["consum_urbano"] = valor
             elif nombre == "Consumo Combinado-Mixto":
                 items["consum_comb_mix"] = valor
+            elif nombre == "Número de Cilindros":
+                items["num_cilindros"] = valor
+            elif nombre == "Cilindrada":
+                items["cilindrada"] = valor
+            elif nombre == "Potencia":
+                items["potencia"] = valor
+            elif nombre == "Par Motor":
+                items["par_motor"] = valor
+            elif nombre == "Estándar de emisiones":
+                items["est_emisiones"] = valor
+            elif nombre == "Tipo de Cambio":
+                items["cambio"] = valor
+            elif nombre == "Tracción":
+                items["traccion"] = valor
+            elif nombre == "Neumáticos delanteros":
+                items["neumaticos_del"] = valor
+            elif nombre == "Neumáticos traseros":
+                items["neumaticos_tra"] = valor
+
 
         return items
