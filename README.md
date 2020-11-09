@@ -66,7 +66,7 @@ Por cada anuncio se almacenan los siguientes campos:
     neumaticos_tra
 
 
-Los datos recogidos han sido publicados en Zenodo (https://doi.org/10.5281/zenodo.4257034) y están disponibles para su 
+Los datos recogidos han sido publicados en Zenodo (https://doi.org/10.5281/zenodo.4262983) y están disponibles para su 
 visualización/descarga siempre que su uso no vaya en contra de las disposiciones legales vigentes.
 
 ### Ficheros del código fuente
